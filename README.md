@@ -9,7 +9,11 @@ Aryan Ghosh | David Xu
 The first of its kind, the NIOS-Robot arm is a robot completely designed in-house and controlled by an FPGA.
 
 It boasts a fully 3D-printed body, NEMA17 stepper motors, a breadboarded electrical system, and a low-level embedded software system.
-![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/62490a1c-f806-4f98-b769-5d2a2664d784) ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/e72bc868-fe96-4779-abeb-ec3edfcbfa3a)
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/758fc85a-4b77-4ba9-9466-50986205331f)
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/172b1e4d-2cfb-433b-9574-2de3ec7b1dac)
+
+
+
 *These graphics are for the previous Mk1*
 
 ## Key Features

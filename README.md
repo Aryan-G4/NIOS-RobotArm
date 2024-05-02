@@ -10,7 +10,7 @@ The first of its kind, the NIOS-Robot arm is a robot completely designed in-hous
 -> Zero Backlash 5:1 Geared stepper motors
 -> Joint Rotation Limits in software
 -> Switch-controlled tactile User interface
--
+-> Solid Concrete Base
 ## Mechanical Design
 
 ## Software Design

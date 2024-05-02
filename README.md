@@ -7,6 +7,7 @@ The first of its kind, the NIOS-Robot arm is a robot completely designed in-hous
  It boasts a fully 3D-printed body, NEMA17 stepper motors, a breadboarded electrical system, and a low-level embedded software system.
 
 ## Key Features
+* Free Movement in XYZ space
 * Detachable and modular End-Effector
 * Zero Backlash 5:1 Geared stepper motors
 * Joint Rotation Limits in software

@@ -17,6 +17,8 @@ The first of its kind, the NIOS-Robot arm is a robot completely designed in-hous
 It boasts a fully 3D-printed body, NEMA17 stepper motors, a breadboarded electrical system, and a low-level embedded software system.
 This project was created to gain experience designing dynamic mechanical systems, conduct dyanamic and force analysis and configure and drive motors. 
 
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/1d9d747d-6692-479e-93fc-b320513d60f2)
+
 Today, robot manipulators are used worldwide to weld, assemble, transport, package, pick, and place. Seeing the importance of these concepts, we decided to create a simplified, scaled-down, cost-effective version of these industrial robots.
 
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/758fc85a-4b77-4ba9-9466-50986205331f)
@@ -34,7 +36,8 @@ Today, robot manipulators are used worldwide to weld, assemble, transport, packa
   
 ## Mechanical Design
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/cb1c69f7-cc6c-4223-818c-1b2c3625922a) 
-![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/575479dc-c6bd-4db8-91c8-fa063d923df8)
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/d46c8dcf-b428-48b1-98eb-87508341bd13)
+
 
 The mechanical design of this system has been through several iterations, all developed in Solidworks. This was done because of Solidowork's Assembly environment, where it is extremely easy to create new parts within an assembly related to others. 
 

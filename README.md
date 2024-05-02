@@ -3,7 +3,7 @@ A 3DoF Robot programmed and controlled using a DE1-SoC's embedded NIOS II proces
 
 Aryan Ghosh | David Xu
 
-[![Robot Demo](![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/49d6488a-0b0f-4029-a8d5-771ca01d3090)](https://youtu.be/5mW0npLePgE)
+[![Project Demo](![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/49d6488a-0b0f-4029-a8d5-771ca01d3090)](https://youtu.be/5mW0npLePgE)
 
 ## Introduction 
 The first of its kind, the NIOS-Robot arm is a robot completely designed in-house and controlled by an FPGA.
@@ -11,8 +11,6 @@ The first of its kind, the NIOS-Robot arm is a robot completely designed in-hous
 It boasts a fully 3D-printed body, NEMA17 stepper motors, a breadboarded electrical system, and a low-level embedded software system.
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/758fc85a-4b77-4ba9-9466-50986205331f)
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/172b1e4d-2cfb-433b-9574-2de3ec7b1dac)
-
-
 
 *These graphics are for the previous Mk1*
 
@@ -39,6 +37,7 @@ Upon completing the structural and dynamic analysis of the robot and evaluating 
 Due to the need for transportation between the workshop and the lab, the robot could not be bolted down to a table to be held in place. To save costs and negate any moment produced by the linkages and end effectors, We poured concrete into the base of the robot, making it so heavy that any movement or forces applied to or by the robot would not cause it to fall over. 
 
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/76c4a5af-19eb-4e4e-9d2f-38868df38b38)
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/e02f9860-67d5-40bf-aeaa-acc3005afb9e)
 
 ## Embedded Software Design
 The software takes the hardware provided to it (GPIO pins, Switches, and LEDs), and interprets the I/O to drive the motors. The software is designed to process only one instruction at a time. It works by polling all the switches waiting for any one to be switched. Once it detects that a switch has been flipped high, the program moves to a subroutine that detects which switch has been flipped, generates the appropriate GPIO pins to write to, and then generates a square wave to those pins. The program continues to generate this signal until the switch is flipped down. During this time, any other inputs and switch flips are completley ignored, allowing the user to focus on one joint at a time. 

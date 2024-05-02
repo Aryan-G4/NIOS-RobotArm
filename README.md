@@ -1,5 +1,5 @@
 # NIOS-RobotArm
-A 3DoF Robot programmed and controlled using a DE1-SoC's embedded NIOS II processor
+A 3DoF Robot Manipulator programmed and controlled using a DE1-SoC's embedded NIOS II processor. Fully designed in-house.
 
 Aryan Ghosh | David Xu
 

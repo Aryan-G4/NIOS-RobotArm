@@ -1,5 +1,7 @@
 # NIOS-RobotArm
 A 3DoF Robot Manipulator programmed and controlled using a DE1-SoC's embedded NIOS II processor. Fully designed in-house.
+
+
 Funded by the University of Toronto
 
 

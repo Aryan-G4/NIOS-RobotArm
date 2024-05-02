@@ -9,6 +9,8 @@ Aryan Ghosh | David Xu
 The first of its kind, the NIOS-Robot arm is a robot completely designed in-house and controlled by an FPGA.
 
 It boasts a fully 3D-printed body, NEMA17 stepper motors, a breadboarded electrical system, and a low-level embedded software system.
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/62490a1c-f806-4f98-b769-5d2a2664d784) ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/e72bc868-fe96-4779-abeb-ec3edfcbfa3a)
+*These graphics are for the previous Mk1*
 
 ## Key Features
 * Free Movement in XYZ space
@@ -19,7 +21,7 @@ It boasts a fully 3D-printed body, NEMA17 stepper motors, a breadboarded electri
 * Solid Concrete Base
   
 ## Mechanical Design
-![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/cb1c69f7-cc6c-4223-818c-1b2c3625922a)
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/cb1c69f7-cc6c-4223-818c-1b2c3625922a) 
 
 The mechanical design of this system has been through several iterations, all developed in Solidworks. This was done because of Solidowork's Assembly environment, where it is extremely easy to create new parts within an assembly related to others. 
 The stepper motor that we chose for the project has an extremely high quality and precise .STEP file, and we used this to create an extremely low tolerance gap between the motors and the body.
@@ -36,6 +38,7 @@ Due to the need for transportation between the workshop and the lab, the robot c
 
 ## Embedded Software Design
 The software takes the hardware provided to it (GPIO pins, Switches, and LEDs), and interprets the I/O to drive the motors. The software is designed to process only one instruction at a time. It works by polling all the switches waiting for any one to be switched. Once it detects that a switch has been flipped high, the program moves to a subroutine that detects which switch has been flipped, generates the appropriate GPIO pins to write to, and then generates a square wave to those pins. The program continues to generate this signal until the switch is flipped down. During this time, any other inputs and switch flips are completley ignored, allowing the user to focus on one joint at a time. 
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/5932d479-3280-48f4-ac99-1b32bdf24901)
 
 Joint limits were implemented by creating variables that counted how many steps each motor took and calculating how many degrees the motor moved by. Assuming there are no missed steps, the software can detect when a motor has rotate 180 degrees and it can prevent the square wave to the step pin from being generated.
 ## Electrical Design

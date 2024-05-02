@@ -1,5 +1,10 @@
 # NIOS-RobotArm
 A 3DoF Robot Manipulator programmed and controlled using a DE1-SoC's embedded NIOS II processor. Fully designed in-house.
+Funded by the University of Toronto
+
+
+Sponsored by StepperOnline
+
 
 Aryan Ghosh | David Xu
 
@@ -7,8 +12,11 @@ Aryan Ghosh | David Xu
 
 ## Introduction 
 The first of its kind, the NIOS-Robot arm is a robot completely designed in-house and controlled by an FPGA.
-
 It boasts a fully 3D-printed body, NEMA17 stepper motors, a breadboarded electrical system, and a low-level embedded software system.
+This project was created to gain experience designing dynamic mechanical systems, conduct dyanamic and force analysis and configure and drive motors. 
+
+Today, robot manipulators are used worldwide to weld, assemble, transport, package, pick, and place. Seeing the importance of these concepts, we decided to create a simplified, scaled-down, cost-effective version of these industrial robots.
+
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/758fc85a-4b77-4ba9-9466-50986205331f)
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/172b1e4d-2cfb-433b-9574-2de3ec7b1dac)
 

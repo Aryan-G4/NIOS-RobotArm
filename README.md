@@ -34,13 +34,18 @@ Today, robot manipulators are used worldwide to weld, assemble, transport, packa
   
 ## Mechanical Design
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/cb1c69f7-cc6c-4223-818c-1b2c3625922a) 
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/575479dc-c6bd-4db8-91c8-fa063d923df8)
 
 The mechanical design of this system has been through several iterations, all developed in Solidworks. This was done because of Solidowork's Assembly environment, where it is extremely easy to create new parts within an assembly related to others. 
+
+
 The stepper motor that we chose for the project has an extremely high quality and precise .STEP file, and we used this to create an extremely low tolerance gap between the motors and the body.
 All three motors were securely fastened using M3 screws measured at the correct length to engage as many threads of the screw as possible for the most secure connection.
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/d5a2016d-7ab8-4708-9017-0cc0c67ca4a7)
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/a72e495c-c841-4419-9049-a7e18d757c8d)
 
 Transferring the output from the stepper motor shaft to a joint linkage was challenging. This was done by attaching an 8mm flange shaft coupler to the arm linkage. This was all held in place by four No.4 bolts and nuts. There was an issue with the nuts coming loose, and in the next revision, locknuts will be used.
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/939e9292-a4dc-4bae-9e9c-7f8126d1206b)
 
 Upon completing the structural and dynamic analysis of the robot and evaluating the torque produced by each motor, the length of both arm linkages was established. This was after several iterations.
 

@@ -44,12 +44,26 @@ Due to the need for transportation between the workshop and the lab, the robot c
 The software takes the hardware provided to it (GPIO pins, Switches, and LEDs), and interprets the I/O to drive the motors. The software is designed to process only one instruction at a time. It works by polling all the switches waiting for any one to be switched. Once it detects that a switch has been flipped high, the program moves to a subroutine that detects which switch has been flipped, generates the appropriate GPIO pins to write to, and then generates a square wave to those pins. The program continues to generate this signal until the switch is flipped down. During this time, any other inputs and switch flips are completley ignored, allowing the user to focus on one joint at a time. 
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/5932d479-3280-48f4-ac99-1b32bdf24901)
 
-Joint limits were implemented by creating variables that counted how many steps each motor took and calculating how many degrees the motor moved by. Assuming there are no missed steps, the software can detect when a motor has rotate 180 degrees and it can prevent the square wave to the step pin from being generated.
-## Electrical Design
-The electrical design handles two power rails:  a 24V power line and a 5V logic line. Each nema17 stepper motor required approximately 12-24V of power at 2.2A to produce its advertised torque. This was all controlled through the A4988 Stepper motors. The A4988 offers 2 important logic pins, step and direction. Every time the step pin goes high (with a logic of 5V), the stepper motor rotates by 0.36 degrees. To allow for continuous rotation, we needed to generate a **square wave** to send to the driver, causing the motor to step so frequently, creating the illusion of seamless rotation. The rotation direction would depend on the direction pin, which causes the motor to rotate clockwise when low (~0V) and counterclockwise when high (~5V). This subroutine will 
+Joint limits were implemented by creating variables that counted how many steps each motor took and calculating how many degrees the motor moved by. Assuming there are no missed steps, the software can detect when a motor has rotated 180 degrees, and it can prevent the square wave to the step pin from being generated.
 
+All code can be found in **main.c**
+## Electrical Design
+The electrical design handles two power rails:  a 24V power line and a 5V logic line. Each nema17 stepper motor required approximately 12-24V of power at 2.2A to produce its advertised torque. This was all controlled through the A4988 Stepper motors. The A4988 offers 2 important logic pins, step and direction. Every time the step pin goes high (with a logic of 5V), the stepper motor rotates by 0.36 degrees. To allow for continuous rotation, we needed to generate a **square wave** to send to the driver, causing the motor to step so frequently, creating the illusion of seamless rotation. The rotation direction would depend on the direction pin, which causes the motor to rotate clockwise when low (~0V) and counterclockwise when high (~5V). The A4988 drivers had to be tuned to the right resistance, as too much current can fry the IC and too little current will not give us enough motor torque. 
+
+Shown below is the electrical system:
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/7cc518b5-121c-435c-939e-dd50978b4ba2)
+
+The GPIO pins from the FPGA are shown on the left. The wires are in groups of two (step and direction) and connect to the step/dir pins of the a4988 Stepper motor drivers shown on the breadboard.on the right there are 3 groups of 4 wires(red,blue, black, green) These groups are for each stepper motor as each motor requires 4 wires. Additionally on the right there is a grey and purple wire. These to wires are connected to the right side power raila nd provide 24V to the system.
+
+All wires are colour coded as black and red are often known to be power/ground. 
 ## Iterations
 Our Mk1 iteration was extremely durable, but both arms were far too heavy. Linkages were unnecessarily large, and the 3d printed infill density was far too high. This caused the elbow motor (located above the base) to miss steps because it 
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/5b8bf70b-2a84-4dc7-8fc0-2c187afb9e42)
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/7a787c1e-a779-474e-a0df-16c0ae538e2c)
+
+*Old mk1*
+Here is a comparison between the old and new first linkage:
+
+
+![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/e35eeaf3-0f10-4251-b9f4-468050137dc8)
 

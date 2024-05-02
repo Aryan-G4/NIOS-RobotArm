@@ -3,7 +3,8 @@ A 3DoF Robot programmed and controlled using a DE1-SoC's embedded NIOS II proces
 
 Aryan Ghosh | David Xu
 
-[![Robot Demo]([https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0](https://youtu.be/5mW0npLePgE).jpg)]([https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE](https://youtu.be/5mW0npLePgE))
+[![Robot Demo](https://youtu.be/5mW0npLePgE.jpg)](https://youtu.be/5mW0npLePgE)
+
 
 
 ## Introduction 

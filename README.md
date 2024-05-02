@@ -68,7 +68,10 @@ All code can be found in **main.c**
 The electrical design handles two power rails:  a 24V power line and a 5V logic line. Each nema17 stepper motor required approximately 12-24V of power at 2.2A to produce its advertised torque. This was all controlled through the A4988 Stepper motors. The A4988 offers 2 important logic pins, step and direction. Every time the step pin goes high (with a logic of 5V), the stepper motor rotates by 0.36 degrees. To allow for continuous rotation, we needed to generate a **square wave** to send to the driver, causing the motor to step so frequently, creating the illusion of seamless rotation. The rotation direction would depend on the direction pin, which causes the motor to rotate clockwise when low (~0V) and counterclockwise when high (~5V). The A4988 drivers had to be tuned to the right resistance, as too much current can fry the IC and too little current will not give us enough motor torque. 
 
 Shown below is the electrical system:
+
+
 ![image](https://github.com/Aryan-G4/NIOS-RobotArm/assets/119129454/7cc518b5-121c-435c-939e-dd50978b4ba2)
+
 
 The GPIO pins from the FPGA are shown on the left. The wires are in groups of two (step and direction) and connect to the step/dir pins of the a4988 Stepper motor drivers shown on the breadboard.on the right there are 3 groups of 4 wires(red,blue, black, green) These groups are for each stepper motor as each motor requires 4 wires. Additionally on the right there is a grey and purple wire. These to wires are connected to the right side power raila nd provide 24V to the system.
 
